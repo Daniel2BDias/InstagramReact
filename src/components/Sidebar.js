@@ -4,10 +4,10 @@ return (
         <div class="img-headline">
           <img src="./assets/goku.jpg" />
           <div>
-            <p><span>Son Goku</span></p>
+            <h1 data-test="name">Son Goku</h1>
             <p>Goku</p>
           </div>
-          <div class="edit-username">
+          <div data-test="edit-name" class="edit-username">
           <ion-icon name="brush"></ion-icon>
           </div>
         </div>
