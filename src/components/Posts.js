@@ -40,12 +40,12 @@ const PostBody = () => {
                 </div>
                 </div>
                 <div class="post-content">
-                <img src="./assets/urgradon.jpg" />
+                <img src="./assets/urdragon.jpg" />
                 </div>
                 <div class="post-reactions">
                 <PostIcons />
                 <div class="curtido">
-                    <img src="images/konami.jpg" />
+                    <img src="./assets/konami.jpg" />
                     <p>
                     Curtido por <span>Konami</span> e
                     <span>outras 1.32 mi pessoas</span>

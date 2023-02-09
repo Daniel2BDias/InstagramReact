@@ -1,9 +1,9 @@
-import ProfileInfo from "../../ProfileInfo"
+import ProfileInfo from "./ProfileInfo"
 
 const Sidebar = () => {
 return (
 <div class="sidebar">
-        <ProfileInfo />
+        <ProfileInfo foto="" nome="" />
         <div class="sidediv">
           <p>Sugestões para você</p>
           <p><span>Ver tudo</span></p>
