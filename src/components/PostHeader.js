@@ -1,6 +1,6 @@
 const PostHead = () => {
 
-    const imgPerfil = ["Yugi_muto.jpg", "urdragon.jpg", "urso.jpg"];
+    const imgPerfil = ["Yugi_muto.jpg", "mtg.jpg", "urso.jpg"];
     const nomePerfil = ["Muto Yugi", "Magic: The Gathering", "O Urso"];
     
 

@@ -8,17 +8,29 @@ const trocaImg = () => {
         return imgUser;
     }
 }
+const editName = () => {
+    const defaultName = "Son Goku";
+    let nameUser = prompt("Digite um nome");
+    
+    if(nameUser === undefined || nameUser === null || nameUser === ""){
+        return defaultName
+    } else {
+        return nameUser;
+    }
+}
 const ProfileInfo = () => {
     return (
         <div class="img-headline">
           <img data-test="profile-img" onClick="trocaImg()" src={trocaImg} />
           <div>
-            <h1 data-test="name">Son Goku</h1>
+            <h1 data-test="name">{editName}</h1>
             <p>Goku</p>
           </div>
-          <div data-test="edit-name" class="edit-username">
+          <div data-test="edit-name" onClick="editName()"class="edit-username">
           <ion-icon name="brush"></ion-icon>
           </div>
         </div>
     )
 }
+
+export default ProfileInfo

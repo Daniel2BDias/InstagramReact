@@ -1,16 +1,9 @@
+import ProfileInfo from "../../ProfileInfo"
+
 const Sidebar = () => {
 return (
 <div class="sidebar">
-        <div class="img-headline">
-          <img src="./assets/goku.jpg" />
-          <div>
-            <h1 data-test="name">Son Goku</h1>
-            <p>Goku</p>
-          </div>
-          <div data-test="edit-name" class="edit-username">
-          <ion-icon name="brush"></ion-icon>
-          </div>
-        </div>
+        <ProfileInfo />
         <div class="sidediv">
           <p>Sugestões para você</p>
           <p><span>Ver tudo</span></p>
