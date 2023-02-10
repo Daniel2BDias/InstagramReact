@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}
+.cabecalho {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  height: 54px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.borda {
+  border-left: 1px solid #dbdbdb;
+  height: 23px;
+}
+.brand {
+  margin-left: 6.5%;
+  display: flex;
+  align-items: flex-end;
+}
+.brand img {
+  max-height: 29px;
+  max-width: 103px;
+  margin-left: 5px;
+}
+.brand ion-icon {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.pesquisa input {
+  color: #979797;
+  background-color: #fafafa;
+  width: 215px;
+  height: 28px;
+  border-radius: 3px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+  border: 1px;
+  line-height: 14px;
+}
+.pesquisa:hover {
+  cursor: text;
+}
+.icons-cab {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 8.5%;
+}
+.icons-cab ion-icon {
+  font-size: 25px;
+}
+.main {
+  display: flex;
+  width: 45%;
+  margin: 0 16% 0 14.5%;
+}
+.scrolling {
+  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.stories {
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  height: 118px;
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 24px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.stories img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 4px;
+  display: block;
+  object-fit: cover;
+}
+.stories .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  width: 70px;
+  margin-left: 20px;
+  text-align: center;
+  position: relative;
+}
+.stories .content:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+.img-content {
+  border-radius: 50%;
+  background: radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0),
+    radial-gradient(white 65%, transparent 0),
+    linear-gradient(to top right, orange, deeppink);
+  /*Isso aqui é daora demais, fiquei horas brincando com isso kkkkkkk*/
+}
+.stories .names {
+  width: 100%;
+}
+.stories .names p {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.icon-stories {
+  position: absolute;
+  right: 5px;
+  top: 48px;
+  color: rgb(151, 147, 147);
+  font-size: 26px;
+}
+.icon-stories:hover {
+  color: #504a4a;
+}
+.post {
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 54px;
+  border-radius: 3px;
+}
+.post-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.post-head .pontos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 17px;
+  font-size: 20px;
+}
+.post-head div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.post-head img {
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-head p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.post-content img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.post-content video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.post-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-icons ion-icon {
+  font-size: 23px;
+}
+.post-icons .like {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 13px;
+  margin-top: 7px;
+}
+.post-icons .like ion-icon {
+  margin-right: 15px;
+}
+.post-icons .fav {
+  margin-top: 7px;
+  margin-right: 13px;
+}
+.curtido {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 5px;
+}
+.curtido span {
+  font-weight: 500;
+}
+span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.post .curtido img {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  object-fit: cover;
+}
+.sidebar {
+  width: 24%;
+  position: fixed;
+  margin-left: 45%;
+  margin-top: 88px;
+}
+.sidebar .img-headline {
+  display: flex;
+  align-items: center;
+  text-align: flex-start;
+}
+.sidebar .img-headline img {
+  height: 56px;
+  width: 56px;
+  border-radius: 28px;
+  margin: 25px 15px 20px 20px;
+  object-fit: cover;
+}
+.sidebar .img-headline p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8e8e8e;
+  line-height: 16px;
+}
+.sidebar .img-headline .edit-username {
+  font-size: 25px;
+  margin: 10px;
+}
+.sidebar h1 {
+  font-weight: 500;
+  color: #262626;
+  font-size: 14px;
+}
+.sidediv {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.sidediv p {
+  color: #8e8e8e;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 12px;
+}
+.follow img {
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.follow {
+  width: 100%;
+}
+.suggest {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.suggest p {
+  margin-left: 25px;
+  font-size: 12px;
+  color: #8e8e8e;
+  line-height: 16px;
+}
+.perfil {
+  display: flex;
+}
+.seguir {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  margin-left: 15px;
+  color: #139ef2;
+  align-text: center;
+}
+.terms {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #c7c7c7;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.license {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 20px;
+  color: #c7c7c7;
+}
+.seguir:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+ion-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+img:hover {
+  cursor: pointer;
+}
+video:hover {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.menuinferior {
+  display: none;
+}
+.logomobile {
+  display: none;
+}
+@media (max-width: 935px) {
+  .brand {
+    margin-left: 9%;
+  }
+  .sidebar {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 614px) {
+  .cabecalho {
+    height: 3.45em;
+    border: 0;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .cabecalho ion-icon {
+    font-size: 2em;
+  }
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+  .logo {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+  .borda {
+    display: none;
+  }
+  .compass,
+  .heart,
+  .person {
+    display: none;
+  }
+  .paper {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+  }
+  .pesquisa {
+    display: none;
+  }
+  .scrolling {
+    margin-top: 54px;
+    width: 100%;
+  }
+  .stories {
+    border-radius: 0;
+    width: 100%;
+    border: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #dbdbdb;
+    background-color: #fafafa;
+  }
+  .post {
+    border: 0;
+    border-radius: 0;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    width: 100%;
+  }
+  .post ion-icon {
+    font-size: 25px;
+  }
+  .logomobile {
+    display: flex;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    top: 15px;
+  }
+  .menuinferior ion-icon {
+    font-size: 1.7em;
+  }
+  .menuinferior {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    z-index: 1;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #dbdbdb;
+  }
+}
