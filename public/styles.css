@@ -204,6 +204,9 @@ body {
 .post-icons .like ion-icon {
   margin-right: 15px;
 }
+.red {
+  color: red;
+}
 .post-icons .fav {
   margin-top: 7px;
   margin-right: 13px;
