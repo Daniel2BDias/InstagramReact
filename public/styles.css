@@ -301,6 +301,9 @@ span:hover {
   color: #8e8e8e;
   line-height: 16px;
 }
+.sidebar span {
+  color: #262626;
+}
 .perfil {
   display: flex;
 }
@@ -311,7 +314,7 @@ span:hover {
   letter-spacing: 0em;
   margin-left: 15px;
   color: #139ef2;
-  align-text: center;
+  text-align: center;
 }
 .terms {
   font-size: 11px;
@@ -356,6 +359,10 @@ a:hover {
 }
 .logomobile {
   display: none;
+}
+
+.liked {
+  color: red;
 }
 @media (max-width: 935px) {
   .brand {

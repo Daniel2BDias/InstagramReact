@@ -2,28 +2,45 @@ import { useState } from "react";
 
 const Post = (props) => {
 
-    const [like, setLike] = useState(undefined);
-    const [save, setSave] = useState(undefined);
-    const [unlike, setUnlike] = useState(undefined);
-    const [unsave, setUnsave] = useState(undefined);
+    const [like, setLike] = useState("heart-outline");
+    const [save, setSave] = useState("bookmark-outline");
+    const [cor, setCor] = useState("");
+    const [number, setNumber] = useState(15);
 
-    const altLike = `<ion-icon data-test="like-post" onClick={unlikeThis} class"red" name="heart"></ion-icon>`;
-    const altSave = `<ion-icon data-test="save-post" onClick={unsaveThis} name="bookmark"></ion-icon>`;
+    const likeUnlike = () => {
+        if(like == "heart-outline"){
+            setLike("heart")
+            setNumber(number+1)
+        } else {
+            setLike("heart-outline")
+            setNumber(number-1)
+        }
 
-    const likeThis = () => {
-        
+        if(cor == ""){
+            setCor("liked")
+        } else {
+            setCor("")
+        }
+
+
     }
 
-    const unlikeThis = () => {
-
+    const justLike = () => {
+        if(like == "heart-outline"){
+            setLike("heart")
+            setNumber(number+1)
+        }
+        if(cor == ""){
+            setCor("liked")
+        }
     }
 
-    const saveThis = () => {
-
-    }
-
-    const unsaveThis = () => {
-
+    const saveUnsave = () => {
+        if(save == "bookmark-outline"){
+            setSave("bookmark")
+        } else {
+            setSave("bookmark-outline")
+        }
     }
 
     return (
@@ -38,7 +55,7 @@ const Post = (props) => {
                 </div>
                 </div>
                 <div class="post-content">
-                {props.type === "image" ? <img data-test="post-image"src={props.content} /> : <video data-test="post-image" autoplay loop muted>
+                {props.type === "image" ? <img onDoubleClick={justLike} data-test="post-image" src={props.content} /> : <video data-test="post-image" autoplay loop muted>
         <source src="./assets/video.mp4" type="video/mp4" />
         <source src="./assets/video.ogv" type="video/ogv" />
         Seu navegador é paia e não suporta o formato.
@@ -47,19 +64,21 @@ const Post = (props) => {
                 <div class="post-reactions">
                 <div class="post-icons">
                 <div class="like">
-                    <ion-icon data-test="like-post" onClick={likeThis} class="like-icon" name="heart-outline"></ion-icon>
+                    <span className={cor}>
+                    <ion-icon data-test="like-post" onClick={likeUnlike} name={like}></ion-icon>
+                    </span>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
                 <div class="fav">
-                    <ion-icon data-test="save-post" onClick={saveThis} name="bookmark-outline"></ion-icon>
+                    <ion-icon data-test="save-post" onClick={saveUnsave} name={save}></ion-icon>
                 </div>
         </div>
                 <div class="curtido">
                     <img src={props.imagelike} />
                     <p>
                     Curtido por <span>{props.likename}</span> e 
-                    <span data-test="likes-number" class="likeCount"> outras 7 pessoas</span>
+                    <span data-test="likes-number" class="likeCount"> outras {number} pessoas</span>
                     </p>
                 </div>
                 <div class="comments"></div>
