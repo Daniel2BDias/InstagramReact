@@ -11,21 +11,21 @@ const ProfileInfo = () => {
 
     const trocaImg = () => {
         
-        const novaImgUser = prompt("Digita a URL da Imagem");
+        const novaImgUser = prompt("Digita a URL da Imagem").trim();
         setImgUser(novaImgUser);
     
     }
     
     const editName = () => {
         
-        const novoNameUser = prompt("Digite um nome");
+        const novoNameUser = prompt("Digite um nome").trim();
         setNameUser(novoNameUser);
         
     }
     
     return (
         <div class="img-headline">
-          <img data-test="profile-img" onClick={trocaImg} src={ImgInvalida ? "./assets/goku.jpg" : imgUser} />
+          <img data-test="profile-image" onClick={trocaImg} src={ImgInvalida ? "./assets/goku.jpg" : imgUser} />
           <div>
             <h1 data-test="name">{nomeInvalido ? defaultName : nameUser}</h1>
             <p>Agora vc é o {nomeInvalido ? defaultName : nameUser}</p>
