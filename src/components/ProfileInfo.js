@@ -11,14 +11,14 @@ const ProfileInfo = () => {
 
     const trocaImg = () => {
         
-        const novaImgUser = prompt("Digita a URL da Imagem");
+        const novaImgUser = prompt("Digita a URL da Imagem").trim();
         setImgUser(novaImgUser);
     
     }
     
     const editName = () => {
         
-        const novoNameUser = prompt("Digite um nome");
+        const novoNameUser = prompt("Digite um nome").trim();
         setNameUser(novoNameUser);
         
     }
